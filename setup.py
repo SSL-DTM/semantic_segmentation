@@ -9,7 +9,7 @@ setup(
     url='http://pypi.python.org/pypi/al/',
     license='LICENSE.txt',
     description='A Pytorch Semantic Segmentation Framework',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     install_requires=[
     ],
 )

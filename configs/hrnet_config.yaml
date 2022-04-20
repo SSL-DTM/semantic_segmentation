@@ -64,6 +64,7 @@ MODEL:
       NUM_CHANNELS: [48, 96, 192, 384]
       NUM_MODULES: 3
   NAME: hrnet
+  PRETRAINED: ''
   NUM_OUTPUTS: 1
 OUTPUT_DIR: output
 PIN_MEMORY: True
