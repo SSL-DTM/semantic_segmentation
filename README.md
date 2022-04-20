@@ -24,10 +24,11 @@ command to create the environment and install necessary libraries:
 
 - `conda env create -f environment.yml`
 
-This should create an environment called `ikg`. Activate the environment to train/test a model
+This should create an environment called `ikg`. Activate the environment and install the package locally to train/test a model
 on your own dataset:
 
 - `conda activate ikg`
+- `pip install -e .`
 
 To train a model using 4 GPUS, run:
 - `python -m torch.distributed.launch --nproc_per_node=4 tools/train.py --cfg configs/hrnet_config.yaml`
