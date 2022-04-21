@@ -42,4 +42,6 @@ To test a model, run:
 The `MODEL.PRETRAINED` argument from command line or the configuration file can be set to a pretrained model file 
 for finetuning the model rather than training from scratch.
 
+Check out [this](https://github.com/SSL-DTM/model_weights) repo for a list of trained and pretrained model weights.
+
 
