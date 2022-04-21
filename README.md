@@ -34,10 +34,10 @@ To train a model using 4 GPUS, run:
 - `python -m torch.distributed.launch --nproc_per_node=4 tools/train.py --cfg configs/hrnet_config.yaml`
 
 To train a model using 2 GPUS, run:
-- `python -m torch.distributed.launch --nproc_per_node=2 tools/train.py --cfg configs/hrnet_config.yaml GPUS 0,1`
+- `python -m torch.distributed.launch --nproc_per_node=2 tools/train.py --cfg configs/hrnet_config.yaml GPUS 0,1,`
 
 To test a model, run:
-- `python tools/test.py --cfg configs/hrnet_config.yaml TEST.MODEL_FILE PATH/TO/SAVED/MODEL/best.pth GPUS 0`
+- `python tools/test.py --cfg configs/hrnet_config.yaml TEST.MODEL_FILE PATH/TO/SAVED/MODEL/best.pth GPUS 0,`
 
 The `MODEL.PRETRAINED` argument from command line or the configuration file can be set to a pretrained model file 
 for finetuning the model rather than training from scratch.
